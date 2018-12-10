@@ -8,7 +8,7 @@
       <li class="nav-item"><a style="cursor: pointer;" class="nav-link" routerLink="/recipes" routerLinkActive="active">Recipes </a></li>
       <li class="nav-item"><a style="cursor: pointer;" class="nav-link" routerLink="/shoppinglist" routerLinkActive="active">Shopping List</a></li>
       <li class="nav-item dropdown" >
-        <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+        <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown"> 
           Manage
         </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -17,7 +17,7 @@
     </div>
     </li>
     <li class="nav-item"><a class="nav-link" *ngIf="!authService.isUserLoggdIn()" routerLink ="/signin">Login </a></li>
-    <li class="nav-item"><a class="nav-link" *ngIf="authService.isUserLoggdIn()" routerLink ="/recipes" (click)="onLoguot()">Logout :(</a></li>
+    <li class="nav-item"><a class="nav-link" *ngIf="authService.isUserLoggdIn()" routerLink ="/recipes" (click)="onLoguot()">Logout </a></li>
   
     </ul>
 </div>
