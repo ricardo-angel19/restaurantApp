@@ -8,17 +8,23 @@ export class RecipeServices {
     recipesChanged = new Subject<Recipe[]>();
     //recipesSelected= new EventEmitter<Recipe>();
     private recipes: Recipe[] = [
-        new Recipe('Atest recipe 1', 'This is a simply test 1', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+        new Recipe('Recipe 1', 'This is a simply test 1', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
             [new Ingredient('bread', 1),
-            new Ingredient('chees', 2)
+            new Ingredient('chees', 2),
+            new Ingredient('bread2', 1),
+            new Ingredient('chees22', 2)
             ]),
-        new Recipe('Atest recipe 2', 'This is a simply test 2', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+        new Recipe('Recipe 2', 'This is a simply test 2', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
             [new Ingredient('orange', 1),
-            new Ingredient('salt', 2)
+            new Ingredient('salt', 2),
+            new Ingredient('orange2', 1),
+            new Ingredient('salt2', 2)
             ]),
-        new Recipe('Atest recipe 3', 'This is a simply test 3', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
-            [new Ingredient('honey', 1),
-            new Ingredient('apples', 2)
+        new Recipe('Recipe 3', 'This is a simply test 3', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+            [new Ingredient('pizza', 1),
+            new Ingredient('apples', 2),
+            new Ingredient('orange2', 1),
+            new Ingredient('salt2', 2)
             ])
     ];
     constructor(private ingredientsService: IngredientsService) { }
