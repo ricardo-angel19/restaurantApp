@@ -8,19 +8,19 @@ export class RecipeServices {
     recipesChanged = new Subject<Recipe[]>();
     //recipesSelected= new EventEmitter<Recipe>();
     private recipes: Recipe[] = [
-        new Recipe('Recipe 1', 'This is a simply test 1', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+        new Recipe('Recipe 1', 'This is a simply test 1', 'https://cocina-casera.com/mx/wp-content/uploads/2017/09/pollo-rostizado.jpg',
             [new Ingredient('bread', 1),
             new Ingredient('chees', 2),
             new Ingredient('bread2', 1),
             new Ingredient('chees22', 2)
             ]),
-        new Recipe('Recipe 2', 'This is a simply test 2', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+        new Recipe('Recipe 2', 'This is a simply test 2', 'http://lasvegasya.com/hospe-test/cp/img/Dining/main_image/pizza.png',
             [new Ingredient('orange', 1),
             new Ingredient('salt', 2),
             new Ingredient('orange2', 1),
             new Ingredient('salt2', 2)
             ]),
-        new Recipe('Recipe 3', 'This is a simply test 3', 'http://www.laopinion.net/wp-content/uploads/2018/09/platillos.jpg',
+        new Recipe('Recipe 3', 'This is a simply test 3', 'http://incubo.com.mx/el_chabarbas_store/upload/tortadshe.png',
             [new Ingredient('pizza', 1),
             new Ingredient('apples', 2),
             new Ingredient('orange2', 1),
